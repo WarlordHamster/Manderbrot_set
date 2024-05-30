@@ -1,0 +1,18 @@
+XMM0 = x1
+XMM1 = x2
+XMM2 = y1
+XMM3 = y2
+XMM4 = delta x
+XMM5 = delta y
+XMM6 = double(r8)
+XMM7 = double(r9)
+rdi = pixelx const
+rsi = pixely const
+rdx = buffor*
+rcx = loop
+r8 = pixel x 
+r9 = pixel y
+XMM8 = cx = pixelx * delta x
+XMM9 = cy = pixely * delta y
+XMM10 = zx
+XMM11 = zy
