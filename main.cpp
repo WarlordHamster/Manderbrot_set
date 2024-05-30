@@ -56,7 +56,7 @@ int main(int argc, char* argv[]) {
     bool running =true;
     int mouse_x=0,mouse_y=0;
     while(running){
-        if(SDL_PollEvent(&event)){
+        while(SDL_PollEvent(&event)){
             if (event.type == SDL_QUIT)running=false;
             else if(event.type == SDL_MOUSEBUTTONUP){
                 SDL_GetMouseState(&mouse_x,&mouse_y);

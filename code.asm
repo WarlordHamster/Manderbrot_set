@@ -74,11 +74,11 @@ Checking_mandelbrot:
     comisd XMM12, XMM14
     jae next
     inc cl
-    cmp cl, 64
+    cmp cl, 128
     jnz Checking_mandelbrot
 next:
     xor rax,rax
-    shl cl, 2
+    shl cl,1
     mov al, cl
     mov ah, cl
     shl rax, 16
